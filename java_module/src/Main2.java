@@ -17,7 +17,7 @@ public class Main2 {
     //   search for Persons that are MALE and between ages of 18, 25
 
     // TODO
-    //   BONUS: implement this using lambda expressions
+    //   BONUS: implement this using streams and lambda expressions
 
   }
 
