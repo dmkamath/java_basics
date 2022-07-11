@@ -25,8 +25,13 @@ public class Main {
 
   private static Map<String, List<String>> getOutputMap(Map<String, String> inputMap) {
     Map<String, List<String>> outputMap = new HashMap<>();
-    // TODO implement this method to return the desired output
-    // expected outputMap={Randy=[input.txt, output.txt], Stan=[copy.py]}
+    for (String ik: inputMap.keySet()) {
+      String iv = inputMap.get(ik);
+      if (!outputMap.containsKey(iv)) {
+        outputMap.put(iv, new ArrayList<>());
+      }
+      outputMap.get(iv).add(ik);
+    }
     return outputMap;
   }
 
